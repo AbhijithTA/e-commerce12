@@ -14,7 +14,6 @@ import { useCart } from '../../../_providers/Cart'
 import { useTheme } from '../../../_providers/Theme'
 import cssVariables from '../../../cssVariables'
 import { CheckoutForm } from '../CheckoutForm'
-import { CheckoutItem } from '../CheckoutItem'
 
 import classes from './index.module.scss'
 
@@ -117,13 +116,7 @@ export const CheckoutPage: React.FC<{
 
                 return (
                   <Fragment key={index}>
-                    <CheckoutItem
-                      product={product}
-                      title={title}
-                      metaImage={metaImage}
-                      quantity={quantity}
-                      index={index}
-                    />
+                    
                   </Fragment>
                 )
               }
